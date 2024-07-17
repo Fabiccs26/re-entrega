@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* font-family: 'Bebas Neue', cursive;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    height: 100%;
+    background-color: aquamarine;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10%;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    color:burlywood;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+.menu .navbar li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+}
+
+.menu .navbar li a:hover {
+    color:burlywood;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header-txt h1, span, h3 {
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.header-txt span {
+    font-size: 26px;
+}
+
+.header-txt p {
+    color: #afafaf;
+    padding: 0 250px;
+    margin: 25px 0;
+}
+
+.btn-1 {
+    display: block;
+    width: 120px;
+    margin: 20px;;
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue
+}
+
+.welcome {
+    display: flex;
+}
+
+.welcome-1 {
+    background-image: url(images/foto6.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+}
+
+.welcome-2 {
+    width: 50%;
+    padding: 150px 250px 150px 100px;
+    color: burlywood;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20px;
+}
+
+
+h2 {
+    font-size: 50px;
+    line-height: 100px;
+    color:burlywood;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: #afafaf;
+    margin: 25px 0;
+    text-align: center;
+}
+
+b1{
+    color: burlywood;
+}
+
+.services-group {
+    padding: 100px 0;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    border: 1px solid burlywood;
+    width: 2000px;
+}
+
+.services-text p {
+    padding: 50px 150px;
+}
+
+.services-group {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 5);
+    border-radius: 10px;
+    background-color: aquamarine;
+    grid-template-columns: var(--columns);
+    grid-template-rows: var(--rows);
+    gap: 40px;
+}
+
+.card::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 200px;
+    background-image: var(--url-image);
+    background-position: center center;
+    background-repeat: no repeat;
+    background-size: cover;
+    }
+
+.card h3 {
+    width: 100%;
+    padding: 40px 20px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.btn-2 {
+    display: block;
+    width: 300px;
+    margin: 20px;;
+    background-color: burlywood;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.prices {
+    display: flex;
+}
+
+.prices-1 {
+    width: 50%;
+    padding: 100px 150px 100px 50px;
+    background-color: aquamarine;
+}
+
+.table {
+    margin: 50px 0;
+    margin: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #afafaf;
+    margin-bottom: 20px ;
+
+}
+
+th {
+    color: #ffffff;
+    padding-bottom: 15px;
+}
+
+td{
+    color: burlywood;
+}
+
+.prices-2 {
+    background-image: url(../images/imagen\ 9.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.personal container {
+    padding: 100% 0;
+    text-align: center;
+}
+
+.personal-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.personal-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+
+}
+
+.personal-1 {
+    text-align: center;
+}
+
+.personal-1 img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px rgb(0, 0, 5);
+}
+
+.personal-1 h3{
+    font-size: 22px;
+}
+
+.personal-1 p{
+    padding: 0 50;
+}
+
+.personal-1 a{
+    color:burlywood;
+}
+
+.suscripcion {
+    background-image: url(../images/terraza.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 500px 600px;
+    width: 100%;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-position: left;
+}
+
+.campo-1 {
+    margin-bottom: 15px;
+}
+
+.campo {
+    margin: 5px;
+    padding: 20px 15px;
+    width: 250px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 10px;
+    color: black;
+    font-size: 14px;
+}
+
+textarea { 
+    width: 520px !important;
+}
+
+.footer-redes {
+    text-align: center;
+    padding: 10px;
+    background-color: aquamarine;
+}
+
+.carousel {
+    margin: 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+@media(max-width:61.9375rem) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+    width: 100%;
+    }
+
+
+    #menu:checked ~ .navbar{
+    display: initial;
+    }
+
+    .header {
+        min-height: ovh;
+    }
+
+    .header-content{
+        padding: 80px 30px 50px 30px;
+    }
+
+    .header-txt{
+        margin-bottom: 15px;
+    }
+
+    .header-txt h1 {
+        font-size: 90px;
+    }
+
+    .header-txt p {
+        padding: 0;
+        margin: 15px 0;
+    }
+
+    .header-txt p{
+        padding: 0;
+        margin: 15px 0;
+
+    }
+
+    .welcome {
+        flex-direction: column;
+    }
+
+    .welcome-1 {
+        display: none;
+    }
+
+    .welcome-2 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 70px;
+        line-height: 80px;
+    }
+
+    p {
+        margin: 15px 0;
+    }
+
+    .services{
+
+        padding-left: 30px;
+    }
+
+    .services-txt p {
+        padding: 0;
+    }
+
+    .card {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .services-1 {
+        margin: 0 0 20px 0;
+    }
+
+    .prices{
+        flex-direction: column;
+    }
+
+    .prices-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    .table {
+        margin: 25px 0 0 0;
+    }
+
+    .prices-2{
+        display: none;
+    }
+
+    .personal {
+        padding: 30px;
+    }
+    .personal-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .personal-1 {
+        margin: 25px;
+    }
+
+    .footer-redes {
+
+        padding: 30px;
+    }
+
+    textarea {
+        width: 250px; !important;
+    }
+}
